@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://8v6tsrcdk6ip"]
+
+[ext_resource type="Texture2D" uid="uid://bkjsa8hyb5ilv" path="res://Assets/icon.svg" id="1_a5bo3"]
+[ext_resource type="Texture2D" uid="uid://ng77ddc0p85h" path="res://Assets/Dog.png" id="1_o25ht"]
+[ext_resource type="PackedScene" uid="uid://d3tdb8qluimol" path="res://tree.tscn" id="3_no63q"]
+
+[node name="Dog" type="Sprite2D"]
+position = Vector2(132, 159)
+scale = Vector2(0.117582, 0.142445)
+texture = ExtResource("1_o25ht")
+
+[node name="Robot2" type="Sprite2D" parent="."]
+modulate = Color(1, 0.388235, 1, 1)
+position = Vector2(-51.0281, -421.215)
+scale = Vector2(4.5484, 4.5484)
+texture = ExtResource("1_a5bo3")
+
+[node name="Robot" type="Sprite2D" parent="Robot2"]
+position = Vector2(143.976, 16.978)
+texture = ExtResource("1_a5bo3")
+
+[node name="Tree" parent="." instance=ExtResource("3_no63q")]
+position = Vector2(-119.066, 1881.43)
+
+[node name="Tree2" parent="." instance=ExtResource("3_no63q")]
+position = Vector2(2670.47, 1902.49)
+
+[node name="Tree3" parent="." instance=ExtResource("3_no63q")]
+position = Vector2(3240.29, -414.195)
+
+[node name="Tree4" parent="." instance=ExtResource("3_no63q")]
+position = Vector2(5681.14, 1958.65)
+
+[node name="Tree5" parent="." instance=ExtResource("3_no63q")]
+position = Vector2(5910.76, -547.58)
